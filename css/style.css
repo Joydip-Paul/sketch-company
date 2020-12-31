@@ -1,0 +1,236 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: ps;
+    src: url('../fonts/Product\ Sans\ Bold.ttf');
+    src: url('../fonts/Product\ Sans\ Bold\ Italic.ttf');
+    src: url('../fonts/Product\ Sans\ Regular.ttf');
+} 
+html{
+    scroll-behavior: smooth;
+}
+body{
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: ps;
+}
+.h-100{
+    height: 100%;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pt-150{
+    padding-top: 150px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pb-150{
+    padding-bottom: 150px;
+}
+:root{
+    --theme-color:  #7CC0EB;
+    --second-theme: #595758;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+.section-title h4 {
+    font-size: 36px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 12px;
+    color: var(--second-theme);
+    font-weight: 600;
+}
+.section-title h4:before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.section-title h4::after {
+	position: absolute;
+	content: "";
+	width: 60px;
+	height: 2px;
+    background-color: var(--theme-color);
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+/* <!--  ======================= Start Header Area ============================== --> */
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    z-index: 1000;
+}
+header .logo img{
+    width: 80px;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    padding: 5px 10px;
+    color: var(--second-theme);
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 500;
+}
+header ul li a.active, 
+header ul li a:hover{
+    text-decoration: none;
+    color: #111;
+}
+.toggle{
+    display: none;
+}
+
+
+
+/* <!--  ======================= Start Banner Area ============================== --> */
+.banner-area{
+    background-color: rgb(255, 255, 255);
+}
+.site-title{
+    margin-top: 220px;
+}
+.site-title h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-theme);
+}
+.site-title h4{
+    color: #7CC0EB;
+    font-size: 50px;
+    text-transform: capitalize;
+    line-height: 20px;
+}
+.button button {
+	background: var(--second-theme);
+	margin-top: 20px;
+	padding: 8px 20px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0%;
+}
+.button button:hover{
+    background-color: var(--theme-color);
+}
+
+
+/* <!--  ======================= Start About Area ============================== --> */
+.about-area{
+    background-color: #eff8ff;
+}
+
+
+/* <!--  ======================= Start Course Area ============================== --> */
+.course-content{
+    box-shadow: 0 15px 40px #ededed;
+    padding: 30px;
+}
+.course-content img{
+    width: 200px;
+}
+.course-content button{
+    padding: 10px 50px;
+    border: none;
+    color: #fff;
+    background-color: var(--theme-color);
+    outline: none;
+}
+.course-content h4{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 20px;
+}
+.course-content h5 {
+    margin-top: 20px;
+	font-size: 16px;
+	text-transform: lowercase;
+    font-weight: 100;
+    line-height: 1px;
+}
+.course-content small{
+    font-size: 12px;
+}
+.course-content h3{
+    margin-top: 10px;
+}
+/* <!--  ======================= Start Contact Area ============================== --> */
+.contact-area{
+    /* background-color: #864C49; */
+    background-color: #eff8ff;
+  }
+  .contact-form input, .contact-form textarea {
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid var(--theme-color);
+  }
+  .contact-form textarea {
+    height: 90px;
+  }
+  .contact-form input[type="submit"] {
+    background-color: var(--theme-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border: 0;
+    text-transform: uppercase;
+  }
+  .contact-form input[type="submit"]:hover{
+      background-color: var(--second-theme);
+  }
+
+/* <!--  ======================= Start Footer Area ============================== --> */
+  .footer-area{
+    /* background-color: var(--theme-color); */
+}
+.footer-area p{
+    color: var(--theme-color);
+}
+.footer-content p{
+    font-size: 20px;
+}
+.footer-content a{ 
+    padding: 10px;
+    font-size: 25px;
+    color: var(--theme-color);
+}
+.footer-content a:hover{
+    color: var(--second-theme);
+    cursor: pointer;
+}
